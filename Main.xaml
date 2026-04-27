@@ -1,0 +1,340 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="Main" VisualBasic.Settings="{x:Null}" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:s="clr-namespace:System;assembly=System.Private.CoreLib" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:sd="clr-namespace:System.Drawing;assembly=System.Drawing.Common" xmlns:sd1="clr-namespace:System.Drawing;assembly=System.Drawing.Primitives" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>GlobalVariablesNamespace</x:String>
+      <x:String>GlobalConstantsNamespace</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Models</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>UiPath.Platform.SyncObjects</x:String>
+      <x:String>UiPath.UIAutomationNext.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Models.CV</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities.Services.RuntimeAnalyze</x:String>
+      <x:String>System.Security</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>System.Activities.Runtime.Collections</x:String>
+      <x:String>System.Reflection</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>PresentationCore</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.Common</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Drawing.Common</AssemblyReference>
+      <AssemblyReference>System.Drawing.Primitives</AssemblyReference>
+      <AssemblyReference>System.Linq</AssemblyReference>
+      <AssemblyReference>System.Net.Mail</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Testing.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>System.Security.Permissions</AssemblyReference>
+      <AssemblyReference>System.Runtime.InteropServices</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.EventBasedAsync</AssemblyReference>
+      <AssemblyReference>System.ComponentModel</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
+      <AssemblyReference>System.Reflection.DispatchProxy</AssemblyReference>
+      <AssemblyReference>System.Reflection.TypeExtensions</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="892.0000000000001,4871.2" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Chrome Swag Labs" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="516.8,4848" sap2010:WorkflowViewState.IdRef="NApplicationCard_3" InteractionMode="DebuggerApi" ScopeGuid="11bdf659-00ae-48db-b3bd-2a117d23098b" Version="V2">
+      <uix:NApplicationCard.Body>
+        <ActivityAction x:TypeArguments="x:Object">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+          </ActivityAction.Argument>
+          <Sequence sap2010:Annotation.AnnotationText="" DisplayName="Faire" sap:VirtualizedContainerService.HintSize="483.2,4642.4" sap2010:WorkflowViewState.IdRef="Sequence_5">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                <x:Boolean x:Key="IsPinned">False</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <uix:NGoToUrl DisplayName="Go To URL - saucedemo.com" sap:VirtualizedContainerService.HintSize="449.6,122.4" sap2010:WorkflowViewState.IdRef="NGoToUrl_1" ScopeIdentifier="11bdf659-00ae-48db-b3bd-2a117d23098b" Url="https://www.saucedemo.com" Version="V5" />
+            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'INPUT user-name'" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="449.6,241.6" sap2010:WorkflowViewState.IdRef="NTypeInto_1" ScopeIdentifier="11bdf659-00ae-48db-b3bd-2a117d23098b" Text="standard_user" Version="V4">
+              <uix:NTypeInto.Target>
+                <uix:TargetAnchorable BrowserURL="saucedemo.com" CVScreenId="83869dfb-ee62-4171-aec3-65b7788dfddb" ContentHash="NhmAlpu5b0yIje7Vfb8yig" CvElementArea="781, 382, 372, 46" CvType="InputBox" DesignTimeRectangle="787, 379, 365, 48" DesignTimeScaleFactor="1.25" ElementType="InputBox" ElementVisibilityArgument="Interactive" FuzzySelectorArgument="&lt;webctrl id='user-name' tag='INPUT' type='text' class='input_error form_input' placeholder='Username' aaname='' /&gt;" Guid="7b95c2d2-3e78-44fa-881e-99668564906c" InformativeScreenshot="ba28d439526a4ce45d9478dc5cbc5f72.png" Reference="a6QOro9y1UeHWcmdBsM6KA/hEv2yk4BOkSHDDkuTQ12_w" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Swag Labs' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" />
+              </uix:NTypeInto.Target>
+              <uix:NTypeInto.VerifyOptions>
+                <uix:VerifyExecutionTypeIntoOptions Mode="Appears">
+                  <uix:VerifyExecutionTypeIntoOptions.Retry>
+                    <InArgument x:TypeArguments="x:Boolean" />
+                  </uix:VerifyExecutionTypeIntoOptions.Retry>
+                  <uix:VerifyExecutionTypeIntoOptions.Timeout>
+                    <InArgument x:TypeArguments="x:Double" />
+                  </uix:VerifyExecutionTypeIntoOptions.Timeout>
+                </uix:VerifyExecutionTypeIntoOptions>
+              </uix:NTypeInto.VerifyOptions>
+            </uix:NTypeInto>
+            <Sequence sap2010:Annotation.AnnotationText="" DisplayName="Faire" sap:VirtualizedContainerService.HintSize="449.6,478.4" sap2010:WorkflowViewState.IdRef="Sequence_6">
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                  <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+              <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,241.6" sap2010:WorkflowViewState.IdRef="NTypeInto_3" ScopeIdentifier="11bdf659-00ae-48db-b3bd-2a117d23098b" Text="secret_sauce" Version="V4">
+                <uix:NTypeInto.Target>
+                  <uix:TargetAnchorable BrowserURL="saucedemo.com" CVScreenId="83869dfb-ee62-4171-aec3-65b7788dfddb" ContentHash="ZBSsiqMkZUeqeqYSmdIZVw" CvElementArea="780, 448, 376, 47" CvType="InputBox" DesignTimeRectangle="787, 446, 365, 48" DesignTimeScaleFactor="1.25" ElementType="InputBoxPassword" ElementVisibilityArgument="Interactive" FuzzySelectorArgument="&lt;webctrl id='password' tag='INPUT' type='password' class='input_error form_input' placeholder='Password' aaname='' /&gt;" Guid="2f1b0a86-d1a7-4c14-874b-9c55e599a104" InformativeScreenshot="da89e80c4b088246b79cb662f535f549.png" Reference="a6QOro9y1UeHWcmdBsM6KA/OCJv2oSOQEiDwe3iK4EtAg" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Swag Labs' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" />
+                </uix:NTypeInto.Target>
+              </uix:NTypeInto>
+              <Delay Duration="00:00:02" sap:VirtualizedContainerService.HintSize="416,113.6" sap2010:WorkflowViewState.IdRef="Delay_2" />
+            </Sequence>
+            <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="449.6,488.8" sap2010:WorkflowViewState.IdRef="TryCatch_1">
+              <TryCatch.Try>
+                <uix:NClick ActivateBefore="True" ClickType="Single" ContinueOnError="True" DisplayName="Click 'Login'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="334.4,225.6" sap2010:WorkflowViewState.IdRef="NClick_2" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="11bdf659-00ae-48db-b3bd-2a117d23098b" Version="V4">
+                  <uix:NClick.Target>
+                    <uix:TargetAnchorable BrowserURL="saucedemo.com" CVScreenId="83869dfb-ee62-4171-aec3-65b7788dfddb" ContentHash="gxkukPILJkuWzwt9xFGdyA" CvElementArea="785, 561, 369, 65" CvTextArea="942, 584, 51, 23" CvTextArgument="Login" CvType="Button" DesignTimeRectangle="787, 563, 365, 61" DesignTimeScaleFactor="1.25" ElementType="Button" ElementVisibilityArgument="Interactive" FuzzySelectorArgument="&lt;webctrl id='login-button' tag='INPUT' type='submit' class='submit-button btn_action' aaname='Login' check:text='Login' /&gt;" Guid="514228bf-8b5b-45b9-b925-7608caac68b2" InformativeScreenshot="bd325c8c7c88ea023f193aeb4b5957d3.png" Reference="a6QOro9y1UeHWcmdBsM6KA/4Oz3HBqcZUuhl1eb2Mapaw" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Swag Labs' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" />
+                  </uix:NClick.Target>
+                  <uix:NClick.VerifyOptions>
+                    <uix:VerifyExecutionOptions Mode="Appears">
+                      <uix:VerifyExecutionOptions.Retry>
+                        <InArgument x:TypeArguments="x:Boolean" />
+                      </uix:VerifyExecutionOptions.Retry>
+                      <uix:VerifyExecutionOptions.Target>
+                        <uix:TargetAnchorable BrowserURL="saucedemo.com" CVScreenId="613b04e4-1b85-4dfe-b372-02dd52a5a1aa" ContentHash="4AMab_Bx_UO95Lznkt3bJw" CvElementArea="785, 491, 369, 65" CvTextArea="942, 514, 51, 23" CvTextArgument="Login" CvType="Button" DesignTimeRectangle="787, 493, 365, 61" DesignTimeScaleFactor="1.25" ElementType="Button" ElementVisibilityArgument="Interactive" FuzzySelectorArgument="&lt;webctrl id='login-button' tag='INPUT' type='submit' class='submit-button btn_action' aaname='Login' check:text='Login' /&gt;" Guid="38108e26-8b64-4ac5-88e4-7bb2f337ce43" InformativeScreenshot="2d0414ceee2d45464c93bfcad482f049.png" Reference="a6QOro9y1UeHWcmdBsM6KA/_IAwRAbHv0GHQIMvxcoxJA" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Swag Labs' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" />
+                      </uix:VerifyExecutionOptions.Target>
+                      <uix:VerifyExecutionOptions.Timeout>
+                        <InArgument x:TypeArguments="x:Double" />
+                      </uix:VerifyExecutionOptions.Timeout>
+                    </uix:VerifyExecutionOptions>
+                  </uix:NClick.VerifyOptions>
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                </uix:NClick>
+              </TryCatch.Try>
+              <TryCatch.Catches>
+                <Catch x:TypeArguments="s:Exception" sap:VirtualizedContainerService.HintSize="403.2,23.2" sap2010:WorkflowViewState.IdRef="Catch`1_1">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                      <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                  <ActivityAction x:TypeArguments="s:Exception">
+                    <ActivityAction.Argument>
+                      <DelegateInArgument x:TypeArguments="s:Exception" Name="exception" />
+                    </ActivityAction.Argument>
+                  </ActivityAction>
+                </Catch>
+              </TryCatch.Catches>
+            </TryCatch>
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'OK'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="449.6,304" sap2010:WorkflowViewState.IdRef="NClick_3" InteractionMode="HardwareEvents" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="11bdf659-00ae-48db-b3bd-2a117d23098b" Version="V4">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable BrowserURL="saucedemo.com/inventory.html" CVScreenId="7e246031-e7da-4989-9788-4e789b5e5990" ContentHash="5-jHUd0pdUGZQ_HjNJNlkA" CvElementArea="1135, 433, 97, 63" CvTextArea="1170, 457, 26, 16" CvTextArgument="OK" CvType="Button" DesignTimeRectangle="1144, 442, 80, 48" DesignTimeScaleFactor="1.25" ElementType="Button" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;ctrl name='Modifiez votre mot de passe' role='dialog' /&gt;&lt;ctrl name='OK' role='push button' /&gt;" FuzzySelectorArgument="&lt;ctrl name='Modifiez votre mot de passe' role='dialog' /&gt;&lt;ctrl name='OK' role='push button' automationid='' check:fulltext='OK' /&gt;" Guid="9f5142ec-ecea-4277-b9f7-f53757c17d65" InformativeScreenshot="a9e2265da5741458814357f123ad85c0.png" Reference="a6QOro9y1UeHWcmdBsM6KA/I2qiAihC7E-3sG4QsPkJqQ" ScopeSelectorArgument="&lt;wnd app='chrome.exe' cls='Chrome_WidgetWin_1' title='Swag Labs - Google Chrome' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V4" />
+              </uix:NClick.Target>
+              <uix:NClick.VerifyOptions>
+                <uix:VerifyExecutionOptions Mode="Appears">
+                  <uix:VerifyExecutionOptions.Retry>
+                    <InArgument x:TypeArguments="x:Boolean" />
+                  </uix:VerifyExecutionOptions.Retry>
+                  <uix:VerifyExecutionOptions.Timeout>
+                    <InArgument x:TypeArguments="x:Double" />
+                  </uix:VerifyExecutionOptions.Timeout>
+                </uix:VerifyExecutionOptions>
+              </uix:NClick.VerifyOptions>
+            </uix:NClick>
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Open Menu'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="449.6,189.6" sap2010:WorkflowViewState.IdRef="NClick_15" InteractionMode="SameAsCard" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="11bdf659-00ae-48db-b3bd-2a117d23098b" Version="V5">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable BrowserURL="saucedemo.com/inventory.html" CVScreenId="815a2cd3-4b2a-4d44-a637-ad887e0ba821" ContentHash="wFZQIoT830uJpcXZ8i7Yng" CvElementArea="29, 210, 34, 29" CvType="Icon" DesignTimeRectangle="34, 212, 25, 25" ElementType="Button" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl id='react-burger-menu-btn' tag='BUTTON' /&gt;" Guid="ad71e553-96b7-433f-bb68-7c2c80a4a9c1" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAB0AAAAdCAYAAABWk2cPAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAADLSURBVEhLY/g/AIABXYAeYNRSmoKBt3Th8uX/fSMjqY4Xr1qJbA2qpWomxv+FlZWojrUsLZCtQbW0b9pUDFdSA0+dMxvZmkEQp/QCI9TSsxcu/O+cOIHq+NzFi8jWoFqqZ2ONkdypgY0dHZCtQbU0MjUFQwM1cGJ2NrI1gyBO6QVGqKVv3r79f+TECarjN+/eIVuDaql7cDBGyqMG9omIQLYG1VJrD3cMDdTADr4+yNagWvrsxQuMoKEGfvnqFbI1gyAh0QuMWkpTAABXvlqKnxPlpgAAAABJRU5ErkJggg==" InformativeScreenshot="cdfbb3376e272a05209467897e5b745d.jpg" Reference="a6QOro9y1UeHWcmdBsM6KA/mIf2T7iRg02EoReZeHqXdQ" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Swag Labs' /&gt;" SearchSteps="Selector, CV" Version="V6" WaitForReadyArgument="Interactive" />
+              </uix:NClick.Target>
+            </uix:NClick>
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Reset App State'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="449.6,189.6" sap2010:WorkflowViewState.IdRef="NClick_16" InteractionMode="SameAsCard" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="11bdf659-00ae-48db-b3bd-2a117d23098b" Version="V5">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable BrowserURL="saucedemo.com/inventory.html" CVScreenId="85301869-5b6d-49ca-ad4d-9f3714fe0b60" ContentHash="fH9I5LZd4EO9ukA-i1zRmA" CvTextArea="37, 431, 181, 18" CvTextArgument="Reset App State" CvType="Text" DesignTimeRectangle="39, 416, 315, 51" ElementType="Text" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl id='reset_sidebar_link' tag='A' /&gt;" Guid="c2996229-f8b7-4e88-873b-d16f1c82812a" InformativeScreenshot="a97e6b8a895c8e477b360861e056fb29.jpg" Reference="a6QOro9y1UeHWcmdBsM6KA/Qke5-5golkWs2mpQ8heOzg" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Swag Labs' /&gt;" SearchSteps="Selector, CV" Version="V6" WaitForReadyArgument="Interactive" />
+              </uix:NClick.Target>
+            </uix:NClick>
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Close Menu'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="449.6,189.6" sap2010:WorkflowViewState.IdRef="NClick_17" InteractionMode="SameAsCard" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="11bdf659-00ae-48db-b3bd-2a117d23098b" Version="V5">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable BrowserURL="saucedemo.com/inventory.html" CVScreenId="b94648e7-6d35-475a-884d-aca047938276" ContentHash="TvaWZZdm5kSjHRNdmRMY5g" CvElementArea="335, 204, 31, 30" CvType="CloseButton" DesignTimeRectangle="339, 207, 25, 25" ElementType="Button" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl id='react-burger-cross-btn' tag='BUTTON' /&gt;" Guid="f62957ad-2bd5-46ed-9ad3-ba75246f171f" InformativeScreenshot="d7bdcc357a41bc99d8010fca6f17b70a.jpg" Reference="a6QOro9y1UeHWcmdBsM6KA/eTTs-IZKkEe7ItFbJ5Ws3g" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Swag Labs' /&gt;" SearchSteps="Selector, CV" Version="V6" WaitForReadyArgument="Interactive" />
+              </uix:NClick.Target>
+            </uix:NClick>
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Add to cart'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="449.6,304" sap2010:WorkflowViewState.IdRef="NClick_7" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="11bdf659-00ae-48db-b3bd-2a117d23098b" Version="V4">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable BrowserURL="saucedemo.com/inventory.html" CVScreenId="534e28d2-ed67-4f8a-a99b-5945602ffdc0" ContentHash="r_r-aTVoCEyf4qrr9uuKqw" CvTextArea="509, 405, 286, 28" CvTextArgument="Sauce Labs Backpack" CvType="Text" DesignTimeRectangle="510, 405, 375, 25" ElementType="Text" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl aaname='Sauce Labs Backpack' tag='DIV' /&gt;" Guid="5712beae-3048-412d-9115-bd30712093aa" InformativeScreenshot="f9acafe2252c1c3b1488188d31ce4834.jpg" Reference="a6QOro9y1UeHWcmdBsM6KA/yqDfU12oCEWFa_zhuEL4NQ" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Swag Labs' /&gt;" SearchSteps="Selector, CV" Version="V6" WaitForReadyArgument="Interactive" />
+              </uix:NClick.Target>
+              <uix:NClick.VerifyOptions>
+                <uix:VerifyExecutionOptions Mode="Appears">
+                  <uix:VerifyExecutionOptions.Retry>
+                    <InArgument x:TypeArguments="x:Boolean" />
+                  </uix:VerifyExecutionOptions.Retry>
+                  <uix:VerifyExecutionOptions.Timeout>
+                    <InArgument x:TypeArguments="x:Double" />
+                  </uix:VerifyExecutionOptions.Timeout>
+                </uix:VerifyExecutionOptions>
+              </uix:NClick.VerifyOptions>
+            </uix:NClick>
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Add to cart(1)'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="449.6,189.6" sap2010:WorkflowViewState.IdRef="NClick_18" InteractionMode="SameAsCard" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="11bdf659-00ae-48db-b3bd-2a117d23098b" Version="V5">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable BrowserURL="saucedemo.com/inventory-item.html" CVScreenId="8b896612-498b-4955-874d-8594b96780ab" ContentHash="2h2nBj2sN02GK1mApm_7hA" CvElementArea="830, 635, 203, 46" CvTextArea="876, 647, 110, 19" CvTextArgument="Add to cart" CvType="Button" DesignTimeRectangle="832, 636, 200, 42" ElementType="Button" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl id='add-to-cart' tag='BUTTON' /&gt;" Guid="4d3202b8-6b1f-4c92-bd62-6314f8eee95d" InformativeScreenshot="2c0439f37b8b0e71729bf6b4bf742ba4.jpg" Reference="a6QOro9y1UeHWcmdBsM6KA/RZjTKi07eEuQp0_s4j2UFQ" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Swag Labs' /&gt;" SearchSteps="Selector, CV" Version="V6" WaitForReadyArgument="Interactive" />
+              </uix:NClick.Target>
+            </uix:NClick>
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Back to products'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="449.6,189.6" sap2010:WorkflowViewState.IdRef="NClick_19" InteractionMode="SameAsCard" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="11bdf659-00ae-48db-b3bd-2a117d23098b" Version="V5">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable BrowserURL="saucedemo.com/inventory-item.html" CVScreenId="feadf1d0-d300-470b-bac8-724322632f8c" ContentHash="QYOPcvnbRkuxQSxW9om7ZA" CvTextArea="57, 284, 163, 23" CvTextArgument="Back to products" CvType="Text" DesignTimeRectangle="34, 273, 212, 40" ElementType="Button" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl id='back-to-products' tag='BUTTON' /&gt;" Guid="18366894-434c-4789-85e3-87296f4e3337" InformativeScreenshot="f85d4f5589d5b4fc98b084c51c065590.jpg" Reference="a6QOro9y1UeHWcmdBsM6KA/hnM58PEm3Uyv3tezcEDwTw" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Swag Labs' /&gt;" SearchSteps="Selector, CV" Version="V6" WaitForReadyArgument="Interactive" />
+              </uix:NClick.Target>
+            </uix:NClick>
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Libellé'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="449.6,189.6" sap2010:WorkflowViewState.IdRef="NClick_13" InteractionMode="SameAsCard" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="11bdf659-00ae-48db-b3bd-2a117d23098b" Version="V5">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable BrowserURL="saucedemo.com/inventory.html" CVScreenId="c695d170-aeb8-4da2-a469-23221b45f029" ContentHash="v0M4d5fpDkqsWixF_vA4bQ" CvElementArea="1839, 196, 51, 43" CvType="Icon" DesignTimeRectangle="1835, 200, 50, 50" ElementType="Text" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl parentid='shopping_cart_container' tag='A' /&gt;" Guid="7fe8f7b4-7bae-4814-9868-427091024492" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAADYAAAA2CAYAAACMRWrdAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAANTSURBVGhD7ZjdSxRRGMb9HyqiT6tZzSKDTK8irC4KhaikLkxv+rILddUSzC4K6sKugojsriuvK4tUKOhD001FKFFKTdkUMttFpK3dynzjnZppfd/dmXPGsZ2R+cGDOPOew/PsOXPmnEmDJUoavbBU8IL9D74+uAehWj98PLAHJrJ98EFZrf7F//E63hfFEcFmbt+EibxsNYiZsA7rzUhpsB8D/TB5pJCZFxG2w/bJSFmwaMdzfbpZFbbHfhKRkmD4Sy80lCbsJ9HIpSSY8PQ7XAqh86UwSa8TYX+U/x4MH3xqjGqy7gZ8ezfzt8UQRBLUUNEFxTTY2+Fh6AgEdPUPDtASKURWv8hgDH6N98L3kZhwMOw3HtNgJ8rLYZmySdeqrM3waWqKlgkRab7LDBlpugtHTSwYCvvXkA6Gunj1Ci0TIlzrZ2aMJBsM+9cwDRY/FXPy8/+M2pYsOFhcLK3ubRnMjJFkg+EORcM0WDx3mprY6MloyMfNGEk2GC79GlLBYrEYZOblMsOiokbMJBsMpSEVDLneeIsZFpVjRwz5EolA+vZsZlpEz5S1zIyRZINZfsY0LjU0MNMialTWMTNGkg0mtSomIhQOq+8zatxMJUo6M2Mk2WBS77FkVNfXM+Mieq2sYYaSSSaY9M4jGcHxcViR4WPGzVSrrGem7JD0XtGIRLsSEbVKLiJmsn1339zawkyLaJeyAYJbNzKDVrQo57GCY0eZaRH5L9Q59wTd+uSxbrSkrGze0cZIbwb+HXsc983j5+ws5O7bq4ZamZkBY8EgLZHCMV+pnra366N1prqK3rZMyr8rdvX0sOfGqu63PKLd24KlYLNxU3GhclQw5HMoBJevNcChkuPsQCmjl68CtGtbsBzM6VgOhs/Z/qIi9QhzusoP4elpWsLAUT5ZUaG2wbaB3l5aYhuWguGZTMnZMe9ZwZeuGWU11fPaZObuhGg0SstswVKwF52dbBFAk2bQHwOFL+3FwFKw92NjzODuwgJaxsAa2m5kdJSW2YKlYMipykrdHB5fHra10RIGLu3LfYre7uy5GlpiG5aDzc3NqQsITiWZLRWOELbp7uujt2zFcjCn4wVzG14wt+EFcxteMLfhBXMbXjC34QVzG0s22G+e7AnlbchaVgAAAABJRU5ErkJggg==" InformativeScreenshot="f9f0d0203df1e54c970c6af639109728.jpg" Reference="a6QOro9y1UeHWcmdBsM6KA/5QPrCozYLEyHOnDg7gEG1A" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Swag Labs' /&gt;" SearchSteps="Selector, CV" Version="V6" WaitForReadyArgument="Interactive" />
+              </uix:NClick.Target>
+            </uix:NClick>
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Checkout'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="449.6,189.6" sap2010:WorkflowViewState.IdRef="NClick_20" InteractionMode="SameAsCard" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="11bdf659-00ae-48db-b3bd-2a117d23098b" Version="V5">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable BrowserURL="saucedemo.com/cart.html" CVScreenId="c6859ec5-b2a2-4b58-a832-e3157b89a6aa" ContentHash="N6VXbWL5m02aak2NrNL8xA" CvElementArea="1492, 675, 278, 45" CvTextArea="1582, 686, 96, 20" CvTextArgument="Checkout" CvType="Button" DesignTimeRectangle="1494, 676, 275, 42" ElementType="Button" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl id='checkout' tag='BUTTON' /&gt;" Guid="66cc431e-b97c-4264-b490-669316e3a7cf" InformativeScreenshot="8e23e551af037fe92e640745caf9e915.jpg" Reference="a6QOro9y1UeHWcmdBsM6KA/hLOSnfLS9kKeUFIOJnrSLA" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Swag Labs' /&gt;" SearchSteps="Selector, CV" Version="V6" WaitForReadyArgument="Interactive" />
+              </uix:NClick.Target>
+            </uix:NClick>
+            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" ClipboardMode="Never" DisplayName="Type Into 'INPUT first-name'" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="449.6,241.6" sap2010:WorkflowViewState.IdRef="NTypeInto_4" InteractionMode="SameAsCard" ScopeIdentifier="11bdf659-00ae-48db-b3bd-2a117d23098b" Text="John" Version="V5">
+              <uix:NTypeInto.Target>
+                <uix:TargetAnchorable BrowserURL="saucedemo.com/checkout-step-one.html" CVScreenId="4bccde25-a5c2-4922-9b60-2c22f36a00a0" ContentHash="2LaZzCszwEeBDNZ3-ks-ag" CvTextArea="720, 520, 90, 17" CvTextArgument="First Name" CvType="Text" DesignTimeRectangle="722, 505, 475, 48" ElementType="InputBox" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl id='first-name' tag='INPUT' /&gt;" Guid="efef58b4-4842-418f-9c97-e4b27828f2b4" InformativeScreenshot="ff0d8d91658e1654ad209e149772e64e.jpg" Reference="a6QOro9y1UeHWcmdBsM6KA/ENo2ofTVhEG79iCoFXLW2A" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Swag Labs' /&gt;" SearchSteps="Selector, CV" Version="V6" WaitForReadyArgument="Interactive" />
+              </uix:NTypeInto.Target>
+              <uix:NTypeInto.VerifyOptions>
+                <uix:VerifyExecutionTypeIntoOptions Mode="Appears">
+                  <uix:VerifyExecutionTypeIntoOptions.Retry>
+                    <InArgument x:TypeArguments="x:Boolean" />
+                  </uix:VerifyExecutionTypeIntoOptions.Retry>
+                  <uix:VerifyExecutionTypeIntoOptions.Timeout>
+                    <InArgument x:TypeArguments="x:Double" />
+                  </uix:VerifyExecutionTypeIntoOptions.Timeout>
+                </uix:VerifyExecutionTypeIntoOptions>
+              </uix:NTypeInto.VerifyOptions>
+            </uix:NTypeInto>
+            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" ClipboardMode="Never" DisplayName="Type Into 'INPUT last-name'" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="449.6,241.6" sap2010:WorkflowViewState.IdRef="NTypeInto_5" InteractionMode="SameAsCard" ScopeIdentifier="11bdf659-00ae-48db-b3bd-2a117d23098b" Text="Doe" Version="V5">
+              <uix:NTypeInto.Target>
+                <uix:TargetAnchorable BrowserURL="saucedemo.com/checkout-step-one.html" CVScreenId="4bccde25-a5c2-4922-9b60-2c22f36a00a0" ContentHash="bPCc1k7C8USQfDGkYR-u-Q" CvTextArea="720, 586, 89, 17" CvTextArgument="Last Name" CvType="Text" DesignTimeRectangle="722, 572, 475, 48" ElementType="InputBox" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl id='last-name' tag='INPUT' /&gt;" Guid="58a94f06-2def-458c-bdb4-8f3aebe1be65" InformativeScreenshot="8748889c330a6f91f4d3698b7a4d3ca0.jpg" Reference="a6QOro9y1UeHWcmdBsM6KA/wc6KPK14akaIFsVxlo9iTA" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Swag Labs' /&gt;" SearchSteps="Selector, CV" Version="V6" WaitForReadyArgument="Interactive" />
+              </uix:NTypeInto.Target>
+              <uix:NTypeInto.VerifyOptions>
+                <uix:VerifyExecutionTypeIntoOptions Mode="Appears">
+                  <uix:VerifyExecutionTypeIntoOptions.Retry>
+                    <InArgument x:TypeArguments="x:Boolean" />
+                  </uix:VerifyExecutionTypeIntoOptions.Retry>
+                  <uix:VerifyExecutionTypeIntoOptions.Timeout>
+                    <InArgument x:TypeArguments="x:Double" />
+                  </uix:VerifyExecutionTypeIntoOptions.Timeout>
+                </uix:VerifyExecutionTypeIntoOptions>
+              </uix:NTypeInto.VerifyOptions>
+            </uix:NTypeInto>
+            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" ClipboardMode="Never" DisplayName="Type Into 'INPUT postal-code'" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="449.6,241.6" sap2010:WorkflowViewState.IdRef="NTypeInto_6" InteractionMode="SameAsCard" ScopeIdentifier="11bdf659-00ae-48db-b3bd-2a117d23098b" Text="34080" Version="V5">
+              <uix:NTypeInto.Target>
+                <uix:TargetAnchorable BrowserURL="saucedemo.com/checkout-step-one.html" CVScreenId="4bccde25-a5c2-4922-9b60-2c22f36a00a0" ContentHash="HHJgb4cl10edz9kiICjXAQ" CvElementArea="716, 641, 483, 48" CvType="InputBox" DesignTimeRectangle="722, 639, 475, 48" ElementType="InputBox" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl id='postal-code' tag='INPUT' /&gt;" Guid="8d10669c-6643-428c-9ce9-83f5bd7b8449" InformativeScreenshot="7b46321f2a4175d32a320b7324b07fdb.jpg" Reference="a6QOro9y1UeHWcmdBsM6KA/XKitkRXnOkWdy_o0Z7afBQ" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Swag Labs' /&gt;" SearchSteps="Selector, CV" Version="V6" WaitForReadyArgument="Interactive" />
+              </uix:NTypeInto.Target>
+              <uix:NTypeInto.VerifyOptions>
+                <uix:VerifyExecutionTypeIntoOptions Mode="Appears">
+                  <uix:VerifyExecutionTypeIntoOptions.Retry>
+                    <InArgument x:TypeArguments="x:Boolean" />
+                  </uix:VerifyExecutionTypeIntoOptions.Retry>
+                  <uix:VerifyExecutionTypeIntoOptions.Timeout>
+                    <InArgument x:TypeArguments="x:Double" />
+                  </uix:VerifyExecutionTypeIntoOptions.Timeout>
+                </uix:VerifyExecutionTypeIntoOptions>
+              </uix:NTypeInto.VerifyOptions>
+            </uix:NTypeInto>
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Continue'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="449.6,189.6" sap2010:WorkflowViewState.IdRef="NClick_21" InteractionMode="SameAsCard" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="11bdf659-00ae-48db-b3bd-2a117d23098b" Version="V5">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable BrowserURL="saucedemo.com/checkout-step-one.html" CVScreenId="83a475c0-144f-4904-8dd0-e8eb565a8fd7" ContentHash="oqos8CmppUKFLwmOBgHgCg" CvElementArea="1463, 931, 279, 54" CvTextArea="1557, 949, 90, 18" CvTextArgument="Continue" CvType="Button" DesignTimeRectangle="1466, 932, 275, 51" ElementType="Button" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl id='continue' tag='INPUT' /&gt;" Guid="327b5656-5b71-4e92-a158-2519ce03c83d" InformativeScreenshot="2fd494ab8fa0d054724cbcb810b5764a.jpg" Reference="a6QOro9y1UeHWcmdBsM6KA/WqVQLZNt2USzluxstPbizg" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Swag Labs' /&gt;" SearchSteps="Selector, CV" Version="V6" WaitForReadyArgument="Interactive" />
+              </uix:NClick.Target>
+            </uix:NClick>
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Finish'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="449.6,189.6" sap2010:WorkflowViewState.IdRef="NClick_22" InteractionMode="SameAsCard" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="11bdf659-00ae-48db-b3bd-2a117d23098b" Version="V5">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable BrowserURL="saucedemo.com/checkout-step-two.html" CVScreenId="f3d46813-5a7d-4f56-9f05-2c9c21dc4911" ContentHash="0d8X86Lne0GeFpW7ailWTA" CvElementArea="1482, 936, 279, 45" CvTextArea="1592, 949, 56, 18" CvTextArgument="Finish" CvType="Button" DesignTimeRectangle="1485, 937, 275, 42" ElementType="Button" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl id='finish' tag='BUTTON' /&gt;" Guid="8d2950c3-9dfb-42ae-9436-2a70eb237691" InformativeScreenshot="b589e3ec262a737f991d441bdcf44951.jpg" Reference="a6QOro9y1UeHWcmdBsM6KA/1u6kRtyQ50ehOFPJbdXKlw" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Swag Labs' /&gt;" SearchSteps="Selector, CV" Version="V6" WaitForReadyArgument="Interactive" />
+              </uix:NClick.Target>
+            </uix:NClick>
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Back Home'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="449.6,180.8" sap2010:WorkflowViewState.IdRef="NClick_23" InteractionMode="SameAsCard" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="11bdf659-00ae-48db-b3bd-2a117d23098b" Version="V5">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable BrowserURL="saucedemo.com/checkout-complete.html" CVScreenId="571b0ef7-3791-4f28-ab68-1d5c1d8a1173" ContentHash="Y9_FRBWhP0SMJg89zSDh-Q" CvElementArea="857, 687, 205, 44" CvTextArea="905, 699, 108, 18" CvTextArgument="Back Home" CvType="Button" DesignTimeRectangle="860, 689, 200, 40" ElementType="Button" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl id='back-to-products' tag='BUTTON' /&gt;" Guid="75e8cd4f-551b-4ab9-9615-35d9561423d7" InformativeScreenshot="bcffb82adcb7a7dc13b77da41afe4668.jpg" Reference="a6QOro9y1UeHWcmdBsM6KA/pHHrqRVK5EOukkzBu36mtA" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Swag Labs' /&gt;" SearchSteps="Selector, CV" Version="V6" WaitForReadyArgument="Interactive" />
+              </uix:NClick.Target>
+            </uix:NClick>
+          </Sequence>
+        </ActivityAction>
+      </uix:NApplicationCard.Body>
+      <uix:NApplicationCard.OCREngine>
+        <ActivityFunc x:TypeArguments="sd:Image, scg:IEnumerable(scg:KeyValuePair(sd1:Rectangle, x:String))">
+          <ActivityFunc.Argument>
+            <DelegateInArgument x:TypeArguments="sd:Image" Name="Image" />
+          </ActivityFunc.Argument>
+        </ActivityFunc>
+      </uix:NApplicationCard.OCREngine>
+      <uix:NApplicationCard.TargetApp>
+        <uix:TargetApp Area="-9, -9, 1938, 1038" BrowserType="Chrome" ContentHash="MTam6OvpJke-TQuep_JvAg" IconBase64="iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAAF3SURBVDhPfVNLK0VRGPUoMWMgGZhISorERPes8gvkkTlDwtiEmSlnjaQYycxAmPgJiAzkdZdESBHFxCOPPu1923d3smp1Hvtb66z97e+UlDhArIa4CvET4k/EL4jDvjYTEAchvmWIjTcQW2JNAYnmyyAuZwg915J8WhHrCoDYAPEsEHxAvIR4DlEQpyA2QmwKWJtcsNQbDDmRN9iF2AyxDmKHe76HeBdwD2K/j78URZ4N0vX+05t9K7Bop8HLF4g9Js5prhTiQobQc8cMRqIvnEDMWdchdkJch3jsPhLW2dFOm8FG5PoO8QHiE8QV14caSwXxMaizPnSZgUWOoxm/IY4FvRiP1jeRT6tswYYkFhtv/fAkSiv/BMXrE955AOI2xIOAhzY8ELshtkPsc8foxXbf5tOZSZX7Fzxtz4sQXyE+u6ttyRtsIZ9WFgxiQKyHeJSxLc/JWFMEmzB3GrHQeA2xNdYUAeKMa+JVQBPaPIwm+bTc1/4C4RnjWlmxHYMAAAAASUVORK5CYII=" InformativeScreenshot="35ba2c2c81de38d02a9f7a16b720c7f2.jpg" Reference="a6QOro9y1UeHWcmdBsM6KA/jCjgbuR9gE6hbjTs85oJ3Q" Selector="&lt;html app='chrome.exe' title='Swag Labs' /&gt;" Url="https://www.saucedemo.com/" Version="V1">
+          <uix:TargetApp.Arguments>
+            <InArgument x:TypeArguments="x:String" />
+          </uix:TargetApp.Arguments>
+          <uix:TargetApp.WorkingDirectory>
+            <InArgument x:TypeArguments="x:String" />
+          </uix:TargetApp.WorkingDirectory>
+        </uix:TargetApp>
+      </uix:NApplicationCard.TargetApp>
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+    </uix:NApplicationCard>
+  </Sequence>
+</Activity>
